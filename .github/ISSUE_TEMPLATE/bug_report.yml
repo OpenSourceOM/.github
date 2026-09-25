@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in an OpenSourceOM repository is broken or incorrect.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Security vulnerabilities belong in email to security@opensourceom.org, not in a public issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what happened instead?
+      placeholder: The scan finished, but the console never showed the new assets.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the repository, version or commit, and any commands or clicks that lead to the bug.
+      placeholder: |
+        1. git checkout ...
+        2. Run ...
+        3. Open ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versions, cloud provider, or browser if they matter.
+      placeholder: core @ abc123, AWS, macOS
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, or links that help explain the bug.
+    validations:
+      required: false
